@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zfx-ssm-web:war">
+    <output-path>$PROJECT_DIR$/zfx-ssm-web/target</output-path>
+    <root id="archive" name="zfx-ssm-web-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zfx-ssm-web:war exploded" />
+    </root>
+  </artifact>
+</component>

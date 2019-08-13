@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/top.iml" filepath="$PROJECT_DIR$/top.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfx-ssm-common/zfx-ssm-common.iml" filepath="$PROJECT_DIR$/zfx-ssm-common/zfx-ssm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfx-ssm-mapper/zfx-ssm-mapper.iml" filepath="$PROJECT_DIR$/zfx-ssm-mapper/zfx-ssm-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfx-ssm-pojo/zfx-ssm-pojo.iml" filepath="$PROJECT_DIR$/zfx-ssm-pojo/zfx-ssm-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfx-ssm-service/zfx-ssm-service.iml" filepath="$PROJECT_DIR$/zfx-ssm-service/zfx-ssm-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfx-ssm-web/zfx-ssm-web.iml" filepath="$PROJECT_DIR$/zfx-ssm-web/zfx-ssm-web.iml" />
+    </modules>
+  </component>
+</project>

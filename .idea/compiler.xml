@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zfx-ssm-common" />
+        <module name="zfx-ssm-mapper" />
+        <module name="zfx-ssm-pojo" />
+        <module name="zfx-ssm-service" />
+        <module name="zfx-ssm-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="top" target="1.8" />
+      <module name="zfx-ssm-common" target="1.8" />
+      <module name="zfx-ssm-mapper" target="1.8" />
+      <module name="zfx-ssm-pojo" target="1.8" />
+      <module name="zfx-ssm-service" target="1.8" />
+      <module name="zfx-ssm-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
