@@ -7,12 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @description:
  * @author: zheng-fx
  * @time: 2019/8/13 0013 15:17
  */
-@Controller
+@Controller()
 public class UserController {
     
     @Autowired
@@ -21,6 +23,14 @@ public class UserController {
     @RequestMapping("query")
     @ResponseBody
     public String queryUser(){
+        User userList = userService.queryUser();
+        return userList.toString();
+    }
+
+    @RequestMapping("login")
+    @ResponseBody
+    public String login(HttpServletRequest request){
+        
         User userList = userService.queryUser();
         return userList.toString();
     }

@@ -1,5 +1,5 @@
 ### 父工程
-####1.各包之间的引用关系
+#### 1.各包之间的引用关系
 
  `zfx-ssm-web`<br>
  > zfx-ssm-common<br>
@@ -16,8 +16,8 @@
  `zfx-ssm-pojo`
  > 这是一个实体类，不需要引用其他模块
  
-####2 注意事项：
+#### 2 注意事项：
 父工程只保留`.pom`,`.iml`,`.idea`<br>
-####3 遇到的问题：
+#### 3 遇到的问题：
 mapper.xml的映射配置：`mybatis.mapperLocations=classpath*:mapper/*.xml`
  
