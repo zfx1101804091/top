@@ -17,7 +17,7 @@
  > 这是一个实体类，不需要引用其他模块
  
 ####2 注意事项：
-父工程只保留`.pom`,`.iml`,`.idea`
+父工程只保留`.pom`,`.iml`,`.idea`<br>
 ####3 遇到的问题：
 mapper.xml的映射配置：`mybatis.mapperLocations=classpath*:mapper/*.xml`
  
