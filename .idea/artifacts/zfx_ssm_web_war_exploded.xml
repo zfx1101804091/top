@@ -1,15 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="zfx-ssm-web:war exploded">
-    <output-path>$PROJECT_DIR$/zfx-ssm-web/target/zfx-ssm-web-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/zfx-ssm-web/target/zfx-ssm-web</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="zfx-ssm-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="zfx-ssm-web-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="zfx-ssm-web" />
-          </element>
           <element id="archive" name="zfx-ssm-service-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="zfx-ssm-service" />
           </element>
@@ -85,7 +82,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/zfx-ssm-web/target/zfx-ssm-web-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/zfx-ssm-web/target/zfx-ssm-web/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="zfx-ssm-web/web/Web" />
     </root>

@@ -102,18 +102,40 @@
             <version>5.1.39</version>
             <scope>runtime</scope>
         </dependency>
-        
+       
     </dependencies>
-    
-
-    <!--父项目不能有spring-boot-maven-plugin，会造成双层打包-->
-  <!--  <build>
+    <!--添加打包配置-->
+    <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.5.3.RELEASE</version>
+                <configuration>
+                    <mainClass>com.zfx.top.WebApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
+           <!-- <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>utf8</encoding>
+                </configuration>
+            </plugin>-->
+            
+            
         </plugins>
-    </build>-->
+    </build>
+    
 
 </project>

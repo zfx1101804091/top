@@ -6,7 +6,7 @@
 <mapper namespace="com.zfx.top.mapper.UserMapper">
 
 
-    <select id="queryUser"  resultType="user">
+    <select id="queryUser"  resultType="com.zfx.top.pojo.User">
 		select * from user;
 	</select>
 
