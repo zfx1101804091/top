@@ -2,6 +2,7 @@ package com.zfx.top.web.controller;
 
 import com.zfx.top.pojo.User;
 import com.zfx.top.service.UserService;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,11 +28,12 @@ public class UserController {
         return userList.toString();
     }
 
-    @RequestMapping("login")
+    @RequestMapping("tologin")
     @ResponseBody
     public String login(HttpServletRequest request){
-        
+
         User userList = userService.queryUser();
-        return userList.toString();
+        JSONObject jsonObject = JSONObject.fromObject(userList);
+        return jsonObject.toString();
     }
 }

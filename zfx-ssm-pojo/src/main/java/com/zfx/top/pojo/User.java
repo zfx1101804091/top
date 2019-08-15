@@ -9,6 +9,25 @@ public class User {
     private int id;
     private String username;
     private String password;
+    private String phone;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public int getId() {
         return id;
@@ -34,12 +53,4 @@ public class User {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }
