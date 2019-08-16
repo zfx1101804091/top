@@ -2,6 +2,7 @@ package com.zfx.top.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @description:
@@ -20,5 +21,11 @@ public class PageController {
     @RequestMapping("registered")
     public String registered(){
         return "registered";
+    } 
+    
+    @RequestMapping("loginSuccess")
+    @ResponseBody
+    public String loginSuccess(){
+        return "success";
     }
 }

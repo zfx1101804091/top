@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.xml.ws.Response;
 
 /**
  * @description:
@@ -21,19 +22,20 @@ public class UserController {
     @Autowired
     private UserService userService;
     
-    @RequestMapping("query")
-    @ResponseBody
-    public String queryUser(){
-        User userList = userService.queryUser();
-        return userList.toString();
-    }
 
     @RequestMapping("tologin")
     @ResponseBody
     public String login(HttpServletRequest request){
 
-        User userList = userService.queryUser();
-        JSONObject jsonObject = JSONObject.fromObject(userList);
-        return jsonObject.toString();
+        String username = (String) request.getParameter("txtUser");      
+        String password = (String) request.getParameter("txtPwd");      
+        User userList = userService.queryUser(username,password);
+        if(userList==null){
+            String respone ="{\"msg\":\"error\"}";
+            return respone;
+        }else {
+            JSONObject jsonObject = JSONObject.fromObject(userList);
+            return jsonObject.toString();
+        }
     }
 }

@@ -17,8 +17,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
 
-    public User queryUser() {
-        User userList =  userMapper.queryUser();
+    public User queryUser(String username, String password) {
+        User userList =  userMapper.queryUser(username,password);
         return userList;
     }
 }

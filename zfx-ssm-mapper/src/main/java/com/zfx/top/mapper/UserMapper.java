@@ -1,6 +1,7 @@
 package com.zfx.top.mapper;
 
 import com.zfx.top.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @description:
@@ -9,6 +10,6 @@ import com.zfx.top.pojo.User;
  */
 public interface UserMapper {
 
-    User queryUser();
+    User queryUser(@Param("username") String username, @Param("password")String password);
     
 }

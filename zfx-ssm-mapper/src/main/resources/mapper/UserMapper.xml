@@ -6,8 +6,8 @@
 <mapper namespace="com.zfx.top.mapper.UserMapper">
 
 
-    <select id="queryUser"  resultType="com.zfx.top.pojo.User">
-		select * from user;
+    <select id="queryUser"  parameterType="java.lang.String" resultType="com.zfx.top.pojo.User">
+		select * from user where phone=#{username}and password=#{password}
 	</select>
 
 	
